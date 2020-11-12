@@ -1,0 +1,34 @@
+NAVICAT导入
+create table t_user(
+    id int(6) primary key auto_increment;
+    username varchar(60);
+    realname varchar(60);
+    password varchar(60);
+    sex varchar(4);
+    status varchar(4);
+    registerTime timestamp
+);
+create table t_emp(
+    id int(6) primary key auto_increment;
+    name varchar(60);
+    path varchar(100);
+    salary double(10,2);
+    age int(3)
+);
+命令行
+create table t_user(
+    id int(6)PRIMARY KEY key auto_increment,
+    username varchar(60)UNIQUE,
+    realname varchar(60),
+    password varchar(60),
+    sex varchar(4),
+    status varchar(4),
+    registerTime timestamp
+);
+create table t_emp(
+    id int(6) primary key auto_increment,
+    name varchar(60),
+    path varchar(100),
+    salary double(10,2),
+    age int(3)
+);
